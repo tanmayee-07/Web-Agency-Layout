@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mini Project</title>
+        <meta name="viewport" content="width=device-width,initial scale=1">
+        <style>
+            header{
+                height: 10vh;
+            }
+            .container{
+                height:90vh;
+                background:url("https://images.pexels.com/photos/205316/pexels-photo-205316.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center no-repeat;
+                background-size: cover;
+                position:relative; 
+            }
+            .centerText{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,-50%);
+            }
+            ul{
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-around;
+                list-style-type: none;
+            }
+            ul li a{
+                text-decoration: none;
+                font-size: 25px;
+                color: darkred;
+            }
+            .brand{
+                flex-basis: 25%;
+            }
+            nav{
+                display: flex;
+                height:10vh;
+                background-color: orange;
+                align-items: baseline;
+            }
+            .titleServices{
+                display: flex;
+                justify-content:center;
+                margin: 3rem 0;
+            }
+            .services{
+                display: flex;
+                width:80%;
+                margin:0 auto;
+                font-size: 18px;
+            }
+            .serviceDescription{
+                color:#453f3f;
+                height: 80%;
+                display: flex;
+                margin:0 auto;
+            }
+            .service{
+                flex-direction: column;
+                display: flex;
+                margin:1rem;
+                transition: background-color 1s ease-in-out;
+            }
+            .service:hover{
+               background-color: #eb98eb;
+            }
+            .titleAbout{
+                justify-content: center;
+                display: flex;
+                text-decoration: underline;
+                margin: 3res 0;
+            }
+            .about{
+                display:flex;
+                width:80%;
+                margin: 0 auto;
+            }
+            .aboutDesc{
+                width:50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color:saddlebrown;
+            }
+            .aboutDesc p{
+                width:80%;
+                text-align: justify;
+            }
+            .aboutImg{
+                width:50%;
+            }
+            .aboutImg img{
+                width:100%;
+            }
+            footer{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+                background-color: skyblue;
+            }
+            .footerDesc p{
+                display: flex;
+                justify-content: center;
+            }            
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <nav>
+            <div class="brand">
+                <h1>Brand</h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </nav>
+            </header>
+        <div class="container">
+            <div class="centerText">
+                <h1>Web Development Agency</h1>
+            </div>
+            </div>
+        </div>
+        <div class="titleServices">
+            <h1>Our Services</h1>
+        
+        </div>
+        <section class="services">
+            <div class="service">
+                <div class="serviceTitle"><h1>Service One</h1></div>
+                <div class="serviceDescription"><p>My name is Tanmayee Choudhury.I'm learning how to build a website using HTML5 and CSS3. Public shaming should not be allowed.” Sharing of such information will run afould of the law, Supreme Court senior advocate Menaka Guruswamy said. </p></div></div>
+                <div class="service">
+                <div class="serviceTitle"><h1>Service Two</h1></div>
+                <div class="serviceDescription"><p>My name is Tanmayee Choudhury.I'm learning how to build a website using HTML5 and CSS3. Public shaming should not be allowed.” Sharing of such information will run afould of the law, Supreme Court senior advocate Menaka Guruswamy said. </p></div></div>
+                    <div class="service">
+                <div class="serviceTitle"><h1>Service Three</h1></div>
+                <div class="serviceDescription"><p>My name is Tanmayee Choudhury.I'm learning how to build a website using HTML5 and CSS3. Public shaming should not be allowed.” Sharing of such information will run afould of the law, Supreme Court senior advocate Menaka Guruswamy said. </p></div>
+            
+            </div>
+        
+        </section>
+        <div class="titleAbout">
+            <h1>ABOUT US</h1>
+        </div>
+        <section class="about">
+            <div class="aboutDesc">
+                <p>"The Delhi list which I received from my colony WhatsApp group has names, addresses, passport details, date of birth—it has everything... Such sensitive information being leaked is of concern due to data theft issues and vigilantism amongst others.Leaking it also violates privacy protections of the Constitution.</p>
+            </div>
+            <div class="aboutImg">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+        </section>
+        <footer>
+            <div class="footerDesc">
+                <h1>Web Agency Website</h1>
+                <p>&copy: 2020</p>
+            </div>
+        
+        </footer>
+    </body>
+</html>
+            
+        
